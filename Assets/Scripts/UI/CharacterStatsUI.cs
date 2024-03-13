@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -11,8 +12,22 @@ public class CharacterStatsUI : MonoBehaviour
     
     void Start()
     {
+        
+
+    }
+
+    private void OnEnable()
+    {
         Stats.IntelligenceChange.AddListener(OnIntelligenceChange);
+        Stats.IntelligenceChange.Invoke(0);
         Stats.StrengthChange.AddListener(OnStrengthChange);
+        Stats.StrengthChange.Invoke(0);
+    }
+
+    private void Awake()
+    {
+       
+        
     }
 
     private void OnStrengthChange(int newStrength)

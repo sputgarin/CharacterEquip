@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,12 @@ public class CharacterStats : MonoBehaviour
 {
     public UnityEvent<int> IntelligenceChange;
     [SerializeField] private int _intelligence;
+
+    private void Start()
+    {
+
+    }
+
     public int GetIntelligence()
     {
         return _intelligence;
