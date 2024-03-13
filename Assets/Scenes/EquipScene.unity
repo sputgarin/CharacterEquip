@@ -1638,11 +1638,11 @@ MonoBehaviour:
   IntelligenceChange:
     m_PersistentCalls:
       m_Calls: []
-  _intelligence: 0
+  _intelligence: 10
   StrengthChange:
     m_PersistentCalls:
       m_Calls: []
-  _strength: 0
+  _strength: 5
 --- !u!4 &2105188253
 Transform:
   m_ObjectHideFlags: 0
